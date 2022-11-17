@@ -31,13 +31,8 @@ total=a+b+c
 print("得",total)
 print("得",total/3)
 
-#圓形面積
-import math    #TQC－Python 3：104 圓形面積計算
-s1=input()
-s2=input()
-s3=input()
-s4=input()
-print("|%10s %10s|"   %(s1,s2))
-print("|%10s %10s|"   %(s3,s4))
-print("|%10s %-10s|"   %(s1,s2))
-print("|%10s %-10s|"   %(s3,s4))
+#圓形面積(記得下載math.pi)
+import math
+r = float(input("請輸入半徑: "))
+print("perimeter = %.2f" %(2*math.pi*r))
+print("Area = %.2f" %(r**2*math.pi))
